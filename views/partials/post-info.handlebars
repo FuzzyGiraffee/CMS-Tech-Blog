@@ -1,0 +1,11 @@
+<article class="post column is-10 mt-4">
+  <div class="title">
+    <p class="in-line is-size-4 has-text-left">{{title}}</p>
+    <p class="in-line is-size-6 has-text-right">by {{user.username}}
+    on {{format_date created_at}}</p>
+  </div>
+  <div class="content">
+    <p class="is-size-5">{{contents}}</p>
+    <a class="is-size-5" href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}} </a>
+  </div>
+</article>

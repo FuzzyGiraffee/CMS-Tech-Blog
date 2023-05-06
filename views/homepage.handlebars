@@ -1,0 +1,8 @@
+{{!-- took out class="post-list" from ol tag --}}
+<ol>
+  {{#each posts as |post|}}
+  <li class="columns is-centered">
+    {{> post-info post}}
+  </li>
+  {{/each}}
+</ol>
